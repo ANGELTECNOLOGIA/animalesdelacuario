@@ -12,10 +12,16 @@ public class Tortuga extends AnimalAcuario{
 
     // Constructor vacío
     public Tortuga() {
+        tipoCaparazon = "Aleta";
+        tiempoBuceoMax = 120;
+        tempIdealAgua = 10.5;
+        requiereLuzUV = true;
+        horasDescansoDiario = 10;
+        comportamiento = "Amable";
+        numIdentificacion = "Indefinido"
     }
 
     // Constructor sobrecargado
-    // En Tortuga.java
 public Tortuga(boolean vivo, String nombreCientifico, String nombrePersonal, 
               String[] alimentosValidos, String sexo, boolean embarazo,
               String tipoCaparazon, int tiempoBuceoMax, double tempIdealAgua, 
@@ -110,6 +116,4 @@ public Tortuga(boolean vivo, String nombreCientifico, String nombrePersonal,
     public void setNumIdentificacion(String numIdentificacion) {
         this.numIdentificacion = numIdentificacion;
     }
-    
-
 }
